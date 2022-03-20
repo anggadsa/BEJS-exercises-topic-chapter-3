@@ -1,14 +1,15 @@
 function gameControl(board, gameControl){
-    let l = board.length
+    let l = board.length-1
+    let g = gameControl.length-1
     for(let i=0; i <= l-1; i++){
 
-        for(let j=0; j <= board[i].length-1; j++){
+        for(let j=0; j <= board[i].length; j++){
 
             if(board[i][j] === "*"){
                 // return `${i},${j}` //check position
                 let path = [i, j] //for container path of position "*"
                 
-                for(let k=0; k <= gameControl.length-1; k++){
+                for(let k=0; k <= g; k++){
 
                     switch (gameControl[k]){
                         case '↑':
