@@ -1,8 +1,0 @@
-1. Entity : Produk
-2. Attribute :  - Produk(product_id, product_name, component_id, quantity);
-                - Komponen(component_id, component_name, description, suppplier_id);
-                - Supplier(suppplier_id)
-3. Relasi : Produk(relasi many to many dengan PK component_id);
-            Komponen(Relasi many to many dengan Produk)
-            Supplier(relasi one to many Komponen)
-			
